@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Interest</title>
+        <link rel="stylesheet" href="Interest.css">
+        <link rel="stylesheet" href="minigame.css">
+        <meta charset="UTF-8">
+        <meta name="viewport", content="width-device-width, initial-scale= 1.0">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="nav-container">
+                    <div class="logo">
+                        <a href="index.html"><span>Liow</span></a>
+                    </div>
+                    <ul>
+                        <li><a href="AboutMe.html">About Me</a></li>
+                        <li><a href="MyHometown.html">My Hometown</a></li>
+                        <li><a href="Interest.html">Interest</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <section class="game-section">
+            <div class="main-container">
+                <img src="phainon-show.gif">
+
+                <div class="game-description">
+                    <h1>
+                        Honkai: Star Rail
+                    </h1>
+
+                    <p>
+                        My favourite video game is Honkai: Star Rail (HSR). 
+                        I play it whenever I'm free. 
+                        HSR is a turn-based RPG with stunning visuals, immersive storytelling, and unforgettable characters that keep me hooked every time I log in. 
+                        Whether it’s exploring new worlds, grinding for relics, or pulling for my favourite characters, the game always gives me something fun to look forward to.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="exercises-section">
+            <div class="second-container">
+                <div class="exercises-description">
+                    <h1>My Favourite Exercises</h1>
+                    <p>
+                        My favourite exercises are jogging and hiking because they let me enjoy nature while staying active and clearing my mind. 
+                        Jogging helps me maintain my stamina, while hiking gives me a sense of achievement every time I reach a viewpoint. 
+                        I also like playing badminton with my friends—it’s fast-paced, fun, and a great way for us to bond. On top of that, 
+                        I sometimes work out at the gym to build strength and improve my overall fitness. With this mix of activities, 
+                        I get to stay healthy while keeping my exercise routine enjoyable and balanced.
+                    </p>
+                </div>
+
+                <div class="exercise-pic">
+                    <img src="gym1.jpeg">
+                    <p>Random picture of me at gym room</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="passion">
+            <div class="third-container">
+                <h2>Rock-Paper-Scissor</h2>
+                <button class="rock-button" onclick="displayPlayerMove('Rock');"><img src="rock-emoji.png" class="move-icon"></button>
+                <button class="paper-button" onclick="displayPlayerMove('Paper');"><img src="paper-emoji.png" class="move-icon"></button>
+                <button class="scissors-button" onclick="displayPlayerMove('Scissors');"><img src="scissors-emoji.png" class="move-icon"></button>
+        
+                <p class="js-result"></p>
+                <p class="js-moves"></p>
+                <p class="js-button"></p>
+        
+                <button class="reset_btn" onclick="score.wins=0;
+                score.losses=0;
+                score.ties=0;
+                localStorage.removeItem('score'); //Reset score in localStorage
+                updateScoreElement(); // Update score display after reset
+                ">Reset Score</button>
+            </div>
+
+            <div class="passion-description">
+                <h1>What is my passion?</h1>
+                <p>I enjoy watching tech blogs during my free time, as they help me stay updated with the latest trends and technologies in the industry. During the semester break, I dedicated some time to self-learning through resources like YouTube tutorials and the Huawei Talent website. My goal was to strengthen my fundamentals in HTML, CSS, JavaScript, and Linux command-line interface (CLI).
+                    Through this self-learning journey, I not only practiced coding and building simple web pages but also gained a deeper understanding of how web technologies and operating systems work together. This experience helped me develop problem-solving skills and reinforced my ability to learn independently, preparing me for more advanced projects in web development and IT.</br>
+                    Here is a mini game I made by following a tutorial from the YouTube channel SuperSimpleDev, which is displayed on the left side.
+                </p>
+            </div>
+        </section>
+
+        <section class="free-time">
+            <h1>What I do during free time?</h1>
+            <div class="fourth-container">
+                <img class="personalpic1" src="WhatsApp Image 2025-11-28 at 4.20.21 PM.jpeg">
+                <img class="personalpic2" src="My-Photo.jpeg">
+                <img class="personalpic3" src="randompic.jpeg">
+            </div>
+
+            <div class="free-time-description">
+                <p>During my free time, I like to hang out with my friends or spend quality time with my family.
+                     I also enjoy exploring new places, trying out different foods, or simply relaxing at home while watching tech blogs and learning about the latest trends in technology. 
+                     These activities help me unwind, stay connected with my loved ones, and continuously broaden my knowledge and interests.
+                </p>
+            </div>
+        </section>
+
+        <section class="ambition">
+            <h1>My Ambition</h1>
+            <div class="ambition-pic">
+                <img src="umskal.jpeg">
+
+                <p>My ambition is to graduate with first-class honors and, in the future, become a successful developer or entrepreneur. I aspire to combine my technical skills, creativity, and business knowledge to develop innovative solutions, contribute to meaningful projects, and leave a positive mark in the tech and business world.
+
+                    </br>While my self-introduction ends here, my journey is only just beginning. I will continue to learn, explore, and challenge myself, updating my portfolio with new projects, skills, and achievements along the way. Every step I take is part of a larger journey toward growth, discovery, and success. This is not the end of my story—it is merely the starting point of a lifelong adventure of learning, creating, and chasing my dreams.</p>
+            </div>
+
+            <header>"Go Beyond! Plus Ultra!"</header>
+        </section>
+
+        <script src="minigame.js"></script>
+        <script src="Interest.js"></script>
+    </body>
+</html>

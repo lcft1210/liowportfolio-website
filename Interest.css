@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  width:100%;
+  height:auto;
+  background-color: black;
+  color: black;
+}
+
+nav{
+  font-family: 'Press Start 2P', cursive;
+  width:100%;
+  height:100%;
+}
+
+.nav-container{
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content:space-around;
+  align-items: center;
+}
+
+::-webkit-scrollbar{
+  display:none;
+}
+
+.logo{
+  color:white;
+  font-size:2rem;
+  font-weight:bold;
+  margin-right:auto;
+}
+
+.logo span{
+  color:gold;
+  text-shadow: 0 0 10px gold;
+}
+
+nav ul{
+  width:100%;
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  position:static;
+  gap:20px;
+  list-style: none;
+}
+
+nav li{
+  height:50px;
+}
+
+nav a{
+  height:100%;
+  padding:0 30px;
+  text-decoration:none;
+  display:flex;
+  align-items:center;
+  color:white;
+}
+
+.main-container {
+  position: relative;
+  overflow:hidden;
+  animation: slideInLeft 1.2s ease-in-out forwards;
+}
+
+.main-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('astral-express-honkai-star-rail.gif');
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);   
+  transform: scale(1.2); 
+  z-index: 0;
+}
+
+.main-container > * {
+  position: relative;
+  z-index: 1;
+}
+
+.main-container img{
+  margin-left: 100px;
+  margin-top: 20px;
+  margin-bottom:20px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.main-container img:hover{
+  transform: scale(1.1) translateY(-10px);
+  box-shadow: 0 20px 30px rgba(255,255,255,0.3);
+  cursor: pointer;
+}
+
+.main-container h1, p{
+  display:flex;
+  width:800px;
+  line-height: 1.5;
+  text-align: justify;
+  margin-left: 100px;
+  color: white;
+}
+
+.exercises-section{
+  display:flex;
+  background: linear-gradient(135deg, #DFF1FF, #B6DAF2);
+  opacity:0;
+  transform: translateY(60px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.second-container{
+  display:flex;
+  flex-direction: row;
+  width:100%;
+  height:auto;
+}
+
+.exercises-description{
+  line-height: 1.5;
+  color: black;
+  margin-top: 80px;
+}
+
+.exercises-description h1{
+  margin-left: 100px;
+}
+
+.exercises-description p{
+  color: black;
+}
+
+
+.exercise-pic img{
+  margin-top: 20px;
+  width:242px;
+  height:430px;
+  display: flex;
+  margin-left:125px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.exercise-pic img:hover{
+  transform: scale(1.2) translateY(-10px);
+  box-shadow: 0 20px 30px rgba(255,255,255,0.3);
+  cursor: pointer;
+}
+
+.exercise-pic p{
+  color:black;
+}
+
+.passion{
+  color:white;
+  background-color:rgb(25, 25, 25);
+  display:flex;
+  gap:40px;
+  padding:40px 80px;
+  opacity:0;
+  transform: translateY(60px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.passion-description{
+  flex: 1;           
+  max-width: 600px;
+  margin-left: 0;
+}
+
+.passion-description h1{
+  text-align: center;
+  margin-left: 100px;
+}
+
+.passion-description p{
+  margin-left:0px;
+}
+
+.free-time{
+  color: white;
+  flex-direction:row ;
+  align-items: center;
+  margin-left: 50px;
+  opacity:0;
+  transform: translateY(60px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.free-time h1{
+  display:block;
+  text-align: center;
+}
+
+.personalpic1{
+  width:500px;
+  height:400px;
+}
+
+.personalpic2{
+  width:400px;
+  height:400px;
+  margin-left:50px;
+}
+
+.personalpic3{
+  width:400px;
+  height:400px;
+  margin-left:50px;
+}
+
+.free-time-description{
+  display:flex;
+  flex-direction: row;
+}
+
+.free-time-description p{
+  font-size:30px;
+  width:1200px;
+  text-align: justify;
+}
+
+.ambition{
+  background-color: white;
+  color:black;
+  text-align: center;
+  opacity:0;
+  transform: translateY(60px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.ambition-pic img{
+  width:400px;
+  height:430px;
+}
+
+.ambition-pic p{
+  color:black;
+  text-align: justify;
+  align-items: center;
+  margin-left: 400px;
+}
+
+.ambition header{
+  font-weight:bold;
+  font-size: 36px;
+}
+
+.exercises-section.show,
+.passion.show,
+.free-time.show,
+.ambition.show{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

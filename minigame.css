@@ -1,0 +1,52 @@
+.third-container{
+    font-family:Arial;
+    background-color:rgb(25, 25, 25);
+    color:white;
+    flex-direction: row;
+    width: 500px;
+}
+
+.third-container h2{
+    font-size:25px;
+    font-weight:bold;
+    margin-left: 70px;
+}
+
+.rock-button, .paper-button, .scissors-button{
+    background-color:transparent;
+    border:3px solid white;
+    cursor:pointer;
+    border-radius: 60px;
+    width:120px;
+    height:120px;
+    margin-right:10px;
+}
+
+.move-icon{
+    width:50px;
+    height:50px;
+}
+
+.js-result{
+    font-weight:bold;
+    font-size:25px;
+    margin-top:50px;
+}
+
+.reset_btn{
+    color:white;
+    background-color: gold;
+    height:50px;
+    width:120px;
+    margin-left: 130px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px gold;
+    transition:0.3s ease;
+}
+
+.reset_btn:hover{
+    background-color: darkgoldenrod;
+    box-shadow: 0 0 15px gold;
+    transform: scale(1.1) translateY(-5px);
+    cursor:pointer;
+}

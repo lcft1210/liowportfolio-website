@@ -11,7 +11,7 @@ function displayPlayerMove(playerMove){
 
     let result='';
 
-    if(playerMove==='Rock'){
+    if(playerMove==='rock'){
         if(computerMove==='rock'){
              result='Tie.';
         }
@@ -23,7 +23,7 @@ function displayPlayerMove(playerMove){
         }
     }
                 
-    if(playerMove==='Paper'){
+    if(playerMove==='paper'){
         if(computerMove==='rock'){
             result='You win.';
         }
@@ -35,7 +35,7 @@ function displayPlayerMove(playerMove){
          }
     }
 
-    if(playerMove==='Scissors'){
+    if(playerMove==='scissors'){
         if(computerMove==='rock'){
             result='You lose.';
         }
